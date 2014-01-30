@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	background: #f1f2f4;
+	cursor: crosshair;
+	overflow: hidden;
+}
+#play {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 300px;
+	font-size: 90px;
+	background: crimson;
+	color: #fff;
+	overflow: hidden;
+	font-family: 'tahoma';
+	z-index: 99;
+	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-direction:alternate;
+
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	margin: -150px 0 0 -150px;
+}
+
+#play a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.history-box{
+	width: 1000px;
+	height: 200px;
+	/*text-align: left;*/
+	padding: 10px;
+	margin: -100px 0 0 -500px;
+	/*z-index: 120;*/
+	/*background: red;*/
+	/*color: #fff;
+	overflow: hidden;*/
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction:alternate;
+}
+
+.history-box h1 {
+	font-size: 80px;
+	/*opacity: 0;*/
+
+    position: absolute;
+	left: -100px;
+	top: -20px;
+}
+.history-box h3 {
+	font-size: 60px;
+	font-weight: normal;
+	/*opacity: 0;*/
+
+	position: absolute;
+	right: -100px;
+	top: 110px;
+}
+
+#count_box {
+	overflow: hidden;
+	height: 300px;
+	z-index: 98;
+	width: 300px;
+	margin: 0 auto;
+
+	position: relative;
+	top: 300px;
+}
+
+#count_box ul {
+	margin:0; 
+	padding:0;
+	list-style: none;
+}
+
+#count_box li {
+	width: 300px;
+	text-align: center;
+	line-height: 300px;
+	font-size: 90px;
+	color: white;
+
+	position: relative;
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111a22;
+	top:0;
+	left:0;
+	z-index: 1;
+}
