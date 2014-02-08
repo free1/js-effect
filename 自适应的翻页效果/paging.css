@@ -1,0 +1,291 @@
+/* 使用了很多小数可能造成各个浏览器下效果问题(错位等) */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+#main {
+  width: 90%;
+  height: 100%;
+  background-color: #7f7f7f;
+
+  position: absolute;
+  left: 5%;
+  overflow: hidden;
+}
+#book_first {
+  text-align: center;
+  font-size: 40px;
+  width: 42%;
+  height: 77%;
+  background-color: white;
+
+  position: absolute;
+  top: 7.5%;
+  left: 10%;
+}
+#book_last {
+  height: 77%;
+
+  position: absolute;
+  top: 8%;
+  left: 52%;
+}
+h4 {
+  width: 80%;
+  font-weight: 100;
+  color: white;
+
+  position: relative;
+  top: 3%;
+  left: 10%;
+}
+
+
+#book_border_left {
+  height: 100%;
+
+  position: relative;
+  left: 9%;
+}
+.book_border {
+  width: 0.2%;
+  height: 77%;
+  margin-top: 7px;
+  border: 1px solid #aeaeae;
+  -moz-box-shadow: -1px 0 5px #d2d2d2;/*firefox*/
+  -webkit-box-shadow: -1px 0 5px #d2d2d2;/*safari或chrome*/
+  box-shadow: -1px 0 5px #d2d2d2;/*opera或ie9*/
+  background-color: white;
+}
+#turn_left {
+  font-size: 20px;
+  color: #e7e7e5;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: red;
+  cursor: pointer;
+
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  z-index: 1000;
+}
+#book_left {
+  /*width: 42%;*/
+  height: 77%;
+  background-color: #d6d6d0;
+  -moz-box-shadow: 1px 0 5px #c8c8c6;/*firefox*/
+  -webkit-box-shadow: 1px 0 5px #c8c8c6;/*safari或chrome*/
+  box-shadow: 1px 0 5px #c8c8c6;/*opera或ie9*/
+
+  position: relative;
+  top: -99.5%;
+  /*left: 10%;*/
+}
+#book_bottom_left {
+  background-color: #7f7f7f;
+  height: 9%;
+  opacity: 0.3;
+
+  position: relative;
+  top: -9.4%;
+}
+#book_size {
+  position: absolute;
+  top: 25%;
+  left: 80%;
+}
+#book_size span {
+  font-weight: lighter;
+  color: white;
+
+  position: absolute;
+  top: -10%;
+  left: -20%;
+}
+#book_size h3{
+  color: white;
+  display: inline;
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+
+#book_border_right {
+  height: 100%;
+
+  position: relative;
+  top: -256.5%;
+  right: 5%;
+}
+#book_right {
+  width: 42%;
+  height: 77%;
+  background-color: white;
+  -moz-box-shadow: 1px 0 5px #c8c8c6;/*firefox*/
+  -webkit-box-shadow: 1px 0 5px #c8c8c6;/*safari或chrome*/
+  box-shadow: 1px 0 5px #c8c8c6;/*opera或ie9*/
+
+  position: relative;
+  top: -178.6%;
+  right: -52%;
+  z-index: 99;
+}
+#book_right_top {
+  width: 15%;
+  height: 10%;
+  position: relative;
+  top: 4%;
+  left: 80%;
+}
+#book_right_top h5 {
+  color: #cbcbcb;
+}
+#book_right_top span {
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+
+  position: relative;
+  top: -15px;
+  right: 30px;
+}
+#turn_right {
+  font-size: 20px;
+  color: #e7e7e5;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: red;
+  cursor: pointer;
+
+  position: absolute;
+  top: 42%;
+  left: 95%;
+  z-index: 1000;
+}
+#bar_code_box {
+  width: 40%;
+  height: 30%;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0 0 4px #dfdfdf;
+
+  position: relative;
+  top: 20%;
+  left: 30%;
+}
+#bar_code {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: 1px solid #f7f7f8;
+  border-radius: 3px;
+
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+/*条形码*/
+ul {
+  list-style: none;
+}
+.line {
+  vertical-align: top;
+  display: inline-block;
+  background-color: black;
+}
+.line_height1 {
+  height: 100px;
+}
+.line_height2 {
+  height: 93px;
+}
+.line_left1 {
+  margin-left: -2px;
+}
+.line_left2 {
+  margin-left: 1px;
+}
+.line_width1 {
+  width: 1px;
+}
+.line_width2 {
+  width: 2px;
+}
+.line_width3 {
+  width: 3px;
+}
+.line_width5 {
+  width: 5px;
+}
+.line_height2 span {
+  font-size: 10px;
+
+  position: relative;
+  top: 90px;
+}
+#bar_code>span {
+  font-size: 8px;
+
+  position: relative;
+  top: 120px;
+  left: 25px;
+}
+#bar_code>h6 {
+  font-size: 8px;
+  font-weight: lighter;
+
+  position: relative;
+  top: -24px;
+  left: 178px;
+}
+
+
+#book_bottom_right {
+  width: 96%;
+  height: 9%;
+  border-top: 1px solid #aeaeae;
+
+  position: relative;
+  top: 51%;
+  left: 2%;
+}
+.circle1,.circle2,.circle3 {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 14px;
+}
+.circle1 {
+  background: #b2b2b2;
+}
+.circle2 {
+  background: #dcdadb;
+}
+.circle3 {
+  background: #fbafdd;
+}
+#book_right_comment {
+  position: relative;
+  top: 44%;
+  left: 60%;
+}
+input {
+  padding: 5px;
+  border: 1px solid #d5d9da;
+  box-shadow: 0 0 5px #e8e9eb inset;
+  border-radius: 5px;
+  outline:0;
+}
